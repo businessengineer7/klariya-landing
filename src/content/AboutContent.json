@@ -1,0 +1,16 @@
+{
+  "title": "Rapide, intelligent et toujours à jour",
+  "text": "Klariya détecte automatiquement le type de document, extrait les informations clés et vous alerte avant chaque échéance. Tout ça, dans une app simple et intuitive.",
+  "section": [
+    {
+      "title": "Scan intelligent",
+      "content": "Prenez en photo vos documents ou importez-les. L'IA extrait automatiquement le texte, les dates limites et les montants.",
+      "icon": "notes.svg"
+    },
+    {
+      "title": "Résumé vocal avec Nova",
+      "content": "Écoutez un résumé naturel de vos documents grâce à Nova, votre assistante vocale alimentée par l'IA.",
+      "icon": "notes.svg"
+    }
+  ]
+}

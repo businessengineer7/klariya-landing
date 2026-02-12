@@ -1,0 +1,79 @@
+<svg width="600" height="500" viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="docGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#34D399" />
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EFF6FF" />
+      <stop offset="100%" stop-color="#DBEAFE" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="300" cy="250" r="200" fill="url(#bgGrad)" opacity="0.5" />
+
+  <!-- Phone frame -->
+  <rect x="200" y="80" width="200" height="340" rx="24" fill="white" stroke="#2563EB" stroke-width="3" />
+  <rect x="260" y="92" width="80" height="8" rx="4" fill="#DBEAFE" />
+
+  <!-- Document card on phone -->
+  <rect x="220" y="130" width="160" height="100" rx="12" fill="white" stroke="#E5E7EB" stroke-width="2" />
+  <rect x="236" y="146" width="80" height="6" rx="3" fill="#2563EB" opacity="0.7" />
+  <rect x="236" y="160" width="128" height="4" rx="2" fill="#93C5FD" opacity="0.5" />
+  <rect x="236" y="172" width="110" height="4" rx="2" fill="#93C5FD" opacity="0.4" />
+  <rect x="236" y="184" width="120" height="4" rx="2" fill="#93C5FD" opacity="0.3" />
+  <!-- Urgency badge -->
+  <rect x="236" y="200" width="50" height="18" rx="9" fill="#FEF2F2" stroke="#EF4444" stroke-width="1" />
+  <text x="248" y="213" font-size="9" fill="#EF4444" font-family="sans-serif" font-weight="600">Urgent</text>
+
+  <!-- Second card -->
+  <rect x="220" y="248" width="160" height="80" rx="12" fill="white" stroke="#E5E7EB" stroke-width="2" />
+  <rect x="236" y="264" width="70" height="6" rx="3" fill="#10B981" opacity="0.7" />
+  <rect x="236" y="278" width="128" height="4" rx="2" fill="#93C5FD" opacity="0.4" />
+  <rect x="236" y="290" width="100" height="4" rx="2" fill="#93C5FD" opacity="0.3" />
+  <!-- Low badge -->
+  <rect x="236" y="304" width="40" height="18" rx="9" fill="#F0FDF4" stroke="#10B981" stroke-width="1" />
+  <text x="245" y="317" font-size="9" fill="#10B981" font-family="sans-serif" font-weight="600">Low</text>
+
+  <!-- Play button (audio) -->
+  <circle cx="360" y="268" r="16" fill="url(#docGrad)" />
+  <polygon points="355,260 355,276 367,268" fill="white" />
+
+  <!-- Floating scan icon -->
+  <g transform="translate(420, 120)">
+    <rect width="80" height="80" rx="16" fill="white" stroke="#E5E7EB" stroke-width="2" />
+    <rect x="16" y="16" width="48" height="48" rx="4" fill="none" stroke="#2563EB" stroke-width="2.5" stroke-dasharray="8 4" />
+    <path d="M 28 40 L 52 40" stroke="#2563EB" stroke-width="2" />
+    <circle cx="40" cy="40" r="8" fill="none" stroke="#10B981" stroke-width="2" />
+  </g>
+
+  <!-- Floating Nova mini -->
+  <g transform="translate(90, 200)">
+    <circle cx="40" cy="40" r="36" fill="url(#bgGrad)" />
+    <circle cx="40" cy="44" r="16" fill="url(#docGrad)" opacity="0.9" />
+    <circle cx="40" cy="30" r="12" fill="url(#docGrad)" />
+    <path d="M 31 22 L 29 14 L 34 19 Z" fill="url(#docGrad)" opacity="0.85" />
+    <path d="M 49 22 L 51 14 L 46 19 Z" fill="url(#docGrad)" opacity="0.85" />
+    <circle cx="36" cy="30" r="4" fill="white" opacity="0.95" />
+    <circle cx="36" cy="30" r="2.5" fill="#60A5FA" />
+    <circle cx="44" cy="30" r="4" fill="white" opacity="0.95" />
+    <circle cx="44" cy="30" r="2.5" fill="#60A5FA" />
+    <path d="M 40 33 L 38 36 L 42 36 Z" fill="#F59E0B" opacity="0.9" />
+  </g>
+
+  <!-- Sound waves -->
+  <path d="M 430 270 Q 445 270 445 290 Q 445 310 430 310" fill="none" stroke="url(#greenGrad)" stroke-width="3" opacity="0.7" />
+  <path d="M 440 260 Q 460 260 460 290 Q 460 320 440 320" fill="none" stroke="url(#greenGrad)" stroke-width="3" opacity="0.5" />
+  <path d="M 450 250 Q 475 250 475 290 Q 475 330 450 330" fill="none" stroke="url(#greenGrad)" stroke-width="3" opacity="0.3" />
+
+  <!-- Sparkles -->
+  <circle cx="150" cy="120" r="4" fill="#F59E0B" opacity="0.6" />
+  <circle cx="480" cy="380" r="5" fill="#2563EB" opacity="0.4" />
+  <circle cx="130" cy="370" r="3" fill="#10B981" opacity="0.5" />
+  <circle cx="470" cy="100" r="3" fill="#F59E0B" opacity="0.5" />
+</svg>
