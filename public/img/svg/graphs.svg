@@ -1,56 +1,82 @@
 <svg width="600" height="500" viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="blueG" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="sGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#2563EB" />
       <stop offset="100%" stop-color="#3B82F6" />
     </linearGradient>
   </defs>
 
-  <!-- Background -->
-  <circle cx="300" cy="250" r="200" fill="#EFF6FF" opacity="0.4" />
+  <!-- Large document being scanned -->
+  <g transform="translate(140, 50)">
+    <!-- Paper shadow -->
+    <rect x="8" y="8" width="240" height="320" rx="16" fill="#000" opacity="0.05" />
+    <!-- Paper -->
+    <rect width="240" height="320" rx="16" fill="white" stroke="#E5E7EB" stroke-width="2.5" />
+    <!-- Header bar -->
+    <rect x="24" y="24" width="130" height="14" rx="7" fill="#2563EB" opacity="0.7" />
+    <!-- Text lines -->
+    <rect x="24" y="56" width="192" height="8" rx="4" fill="#CBD5E1" opacity="0.6" />
+    <rect x="24" y="74" width="170" height="8" rx="4" fill="#CBD5E1" opacity="0.5" />
+    <rect x="24" y="92" width="185" height="8" rx="4" fill="#CBD5E1" opacity="0.4" />
+    <rect x="24" y="110" width="150" height="8" rx="4" fill="#CBD5E1" opacity="0.35" />
+    <!-- Amount highlight -->
+    <rect x="24" y="140" width="120" height="32" rx="12" fill="#EFF6FF" />
+    <text x="40" y="162" font-size="16" fill="#2563EB" font-family="sans-serif" font-weight="800">1 250,00 €</text>
+    <!-- Date highlight -->
+    <rect x="24" y="190" width="140" height="28" rx="12" fill="#FEF2F2" />
+    <text x="38" y="210" font-size="12" fill="#EF4444" font-family="sans-serif" font-weight="700">Échéance : 15/03</text>
+    <!-- More text -->
+    <rect x="24" y="240" width="192" height="8" rx="4" fill="#CBD5E1" opacity="0.3" />
+    <rect x="24" y="258" width="160" height="8" rx="4" fill="#CBD5E1" opacity="0.25" />
+    <rect x="24" y="276" width="175" height="8" rx="4" fill="#CBD5E1" opacity="0.2" />
+  </g>
 
-  <!-- Camera/Scan frame -->
-  <rect x="140" y="80" width="320" height="240" rx="20" fill="white" stroke="#2563EB" stroke-width="3" />
+  <!-- Scan line animation -->
+  <rect x="140" y="200" width="240" height="4" rx="2" fill="url(#sGrad)" opacity="0.6" />
 
-  <!-- Camera UI corners -->
-  <path d="M 170 110 L 170 130" stroke="#2563EB" stroke-width="3" stroke-linecap="round" />
-  <path d="M 170 110 L 190 110" stroke="#2563EB" stroke-width="3" stroke-linecap="round" />
-  <path d="M 430 110 L 430 130" stroke="#2563EB" stroke-width="3" stroke-linecap="round" />
-  <path d="M 430 110 L 410 110" stroke="#2563EB" stroke-width="3" stroke-linecap="round" />
-  <path d="M 170 290 L 170 270" stroke="#2563EB" stroke-width="3" stroke-linecap="round" />
-  <path d="M 170 290 L 190 290" stroke="#2563EB" stroke-width="3" stroke-linecap="round" />
-  <path d="M 430 290 L 430 270" stroke="#2563EB" stroke-width="3" stroke-linecap="round" />
-  <path d="M 430 290 L 410 290" stroke="#2563EB" stroke-width="3" stroke-linecap="round" />
+  <!-- AI analysis result card -->
+  <g transform="translate(400, 120)">
+    <rect x="4" y="4" width="170" height="200" rx="20" fill="#000" opacity="0.05" />
+    <rect width="170" height="200" rx="20" fill="white" stroke="#2563EB" stroke-width="2.5" />
+    <!-- Checkmark circle -->
+    <circle cx="85" cy="45" r="22" fill="#D1FAE5" />
+    <path d="M 73 45 L 81 53 L 97 37" fill="none" stroke="#10B981" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+    <!-- Labels -->
+    <text x="28" y="90" font-size="10" fill="#6B7280" font-family="sans-serif">Type</text>
+    <text x="28" y="106" font-size="13" fill="#1F2937" font-family="sans-serif" font-weight="700">Facture</text>
+    <text x="28" y="130" font-size="10" fill="#6B7280" font-family="sans-serif">Montant</text>
+    <text x="28" y="146" font-size="13" fill="#1F2937" font-family="sans-serif" font-weight="700">1 250,00 €</text>
+    <text x="28" y="170" font-size="10" fill="#6B7280" font-family="sans-serif">Échéance</text>
+    <text x="28" y="186" font-size="13" fill="#EF4444" font-family="sans-serif" font-weight="700">15 mars 2026</text>
+  </g>
 
-  <!-- Document being scanned -->
-  <rect x="210" y="120" width="180" height="160" rx="4" fill="#FAFAFA" stroke="#E5E7EB" stroke-width="1.5" />
-  <rect x="228" y="140" width="100" height="8" rx="4" fill="#1F2937" opacity="0.15" />
-  <rect x="228" y="158" width="144" height="5" rx="2.5" fill="#93C5FD" opacity="0.4" />
-  <rect x="228" y="170" width="130" height="5" rx="2.5" fill="#93C5FD" opacity="0.35" />
-  <rect x="228" y="182" width="140" height="5" rx="2.5" fill="#93C5FD" opacity="0.3" />
-  <rect x="228" y="194" width="110" height="5" rx="2.5" fill="#93C5FD" opacity="0.25" />
-  <rect x="228" y="210" width="60" height="20" rx="4" fill="#2563EB" opacity="0.1" />
-  <text x="238" y="224" font-size="10" fill="#2563EB" font-family="sans-serif" font-weight="600">1 250,00 EUR</text>
-  <rect x="228" y="240" width="80" height="16" rx="8" fill="#FEF2F2" />
-  <text x="236" y="252" font-size="8" fill="#EF4444" font-family="sans-serif" font-weight="600">Echéance: 15/03</text>
+  <!-- Arrow from doc to card -->
+  <path d="M 390 230 Q 400 230 410 210" fill="none" stroke="#2563EB" stroke-width="3" stroke-dasharray="8 4" stroke-linecap="round" />
+  <polygon points="412,204 418,216 406,214" fill="#2563EB" />
 
-  <!-- Scan line -->
-  <rect x="200" y="195" width="200" height="3" rx="1.5" fill="url(#blueG)" opacity="0.6" />
-
-  <!-- AI analysis floating card -->
-  <g transform="translate(380, 280)">
-    <rect width="170" height="140" rx="16" fill="white" stroke="#E5E7EB" stroke-width="2" />
-    <text x="16" y="30" font-size="11" fill="#1F2937" font-family="sans-serif" font-weight="700">Analyse IA</text>
-    <rect x="16" y="42" width="138" height="1" fill="#E5E7EB" />
-    <text x="16" y="62" font-size="9" fill="#6B7280" font-family="sans-serif">Type: Facture</text>
-    <text x="16" y="80" font-size="9" fill="#6B7280" font-family="sans-serif">Montant: 1 250,00 EUR</text>
-    <text x="16" y="98" font-size="9" fill="#6B7280" font-family="sans-serif">Echéance: 15 mars 2026</text>
-    <rect x="16" y="110" width="60" height="18" rx="9" fill="#F0FDF4" />
-    <text x="24" y="123" font-size="8" fill="#10B981" font-family="sans-serif" font-weight="600">Analyse OK</text>
+  <!-- Mini Nova peeking from bottom -->
+  <g transform="translate(430, 340)">
+    <circle cx="50" cy="50" r="44" fill="url(#sGrad)" />
+    <circle cx="50" cy="38" r="30" fill="url(#sGrad)" />
+    <!-- Ears -->
+    <path d="M 28 16 L 22 -2 L 34 12 Z" fill="#3B82F6" />
+    <path d="M 72 16 L 78 -2 L 66 12 Z" fill="#3B82F6" />
+    <!-- Eyes -->
+    <ellipse cx="38" cy="36" rx="11" ry="12" fill="white" />
+    <circle cx="40" cy="36" r="7" fill="#1F2937" />
+    <circle cx="43" cy="32" r="3.5" fill="white" />
+    <ellipse cx="62" cy="36" rx="11" ry="12" fill="white" />
+    <circle cx="64" cy="36" r="7" fill="#1F2937" />
+    <circle cx="67" cy="32" r="3.5" fill="white" />
+    <!-- Beak -->
+    <path d="M 50 48 L 44 58 L 56 58 Z" fill="#F59E0B" />
+    <!-- Magnifying glass in wing -->
+    <circle cx="0" cy="55" r="16" fill="none" stroke="white" stroke-width="4" />
+    <line x1="-10" y1="67" x2="-18" y2="78" stroke="white" stroke-width="4" stroke-linecap="round" />
   </g>
 
   <!-- Sparkles -->
-  <circle cx="130" cy="160" r="4" fill="#F59E0B" opacity="0.6" />
-  <circle cx="500" cy="120" r="5" fill="#10B981" opacity="0.5" />
-  <circle cx="120" cy="350" r="3" fill="#2563EB" opacity="0.4" />
+  <circle cx="100" cy="120" r="7" fill="#FBBF24" opacity="0.7" />
+  <circle cx="560" cy="400" r="5" fill="#10B981" opacity="0.6" />
+  <circle cx="130" cy="420" r="6" fill="#2563EB" opacity="0.4" />
 </svg>

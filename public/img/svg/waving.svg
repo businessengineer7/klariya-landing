@@ -1,73 +1,97 @@
 <svg width="600" height="500" viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="novaG" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="wGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#2563EB" />
-      <stop offset="50%" stop-color="#3B82F6" />
-      <stop offset="100%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#3B82F6" />
     </linearGradient>
-    <radialGradient id="eyeG">
-      <stop offset="0%" stop-color="#60A5FA" />
-      <stop offset="100%" stop-color="#2563EB" />
-    </radialGradient>
-    <radialGradient id="glowG">
-      <stop offset="0%" stop-color="#DBEAFE" stop-opacity="0.6" />
-      <stop offset="100%" stop-color="#DBEAFE" stop-opacity="0" />
-    </radialGradient>
   </defs>
 
-  <!-- Background -->
-  <circle cx="300" cy="250" r="220" fill="url(#glowG)" opacity="0.5" />
-  <circle cx="300" cy="250" r="180" fill="none" stroke="#93C5FD" stroke-width="1.5" opacity="0.2" />
-  <circle cx="300" cy="250" r="140" fill="none" stroke="#60A5FA" stroke-width="1" opacity="0.15" />
+  <!-- Phone left -->
+  <g transform="translate(60, 100)">
+    <rect x="6" y="6" width="160" height="290" rx="26" fill="#000" opacity="0.06" />
+    <rect width="160" height="290" rx="26" fill="white" stroke="#E5E7EB" stroke-width="2.5" />
+    <rect x="45" y="10" width="70" height="7" rx="3.5" fill="#DBEAFE" />
+    <!-- App screen content -->
+    <rect x="16" y="32" width="128" height="60" rx="12" fill="#F0F9FF" />
+    <rect x="28" y="44" width="70" height="8" rx="4" fill="#2563EB" opacity="0.6" />
+    <rect x="28" y="58" width="100" height="5" rx="2.5" fill="#93C5FD" opacity="0.4" />
+    <rect x="28" y="70" width="80" height="5" rx="2.5" fill="#93C5FD" opacity="0.3" />
 
-  <!-- Nova body -->
-  <circle cx="300" cy="280" r="80" fill="url(#novaG)" opacity="0.9" />
-  <circle cx="300" cy="195" r="64" fill="url(#novaG)" />
-  <path d="M 243 150 L 232 110 L 253 130 Z" fill="url(#novaG)" opacity="0.85" />
-  <path d="M 357 150 L 368 110 L 347 130 Z" fill="url(#novaG)" opacity="0.85" />
+    <rect x="16" y="104" width="128" height="60" rx="12" fill="#F0FDF4" />
+    <rect x="28" y="116" width="60" height="8" rx="4" fill="#10B981" opacity="0.6" />
+    <rect x="28" y="130" width="100" height="5" rx="2.5" fill="#93C5FD" opacity="0.4" />
+    <rect x="28" y="142" width="90" height="5" rx="2.5" fill="#93C5FD" opacity="0.3" />
 
-  <!-- Eyes -->
-  <circle cx="275" cy="195" r="25" fill="white" opacity="0.95" />
-  <circle cx="275" cy="195" r="18" fill="url(#eyeG)" />
-  <circle cx="275" cy="195" r="9" fill="#1F2937" />
-  <circle cx="280" cy="190" r="5" fill="white" opacity="0.9" />
-  <circle cx="325" cy="195" r="25" fill="white" opacity="0.95" />
-  <circle cx="325" cy="195" r="18" fill="url(#eyeG)" />
-  <circle cx="325" cy="195" r="9" fill="#1F2937" />
-  <circle cx="330" cy="190" r="5" fill="white" opacity="0.9" />
+    <rect x="16" y="176" width="128" height="60" rx="12" fill="#FFF7ED" />
+    <rect x="28" y="188" width="75" height="8" rx="4" fill="#F59E0B" opacity="0.6" />
+    <rect x="28" y="202" width="105" height="5" rx="2.5" fill="#93C5FD" opacity="0.4" />
+    <rect x="28" y="214" width="85" height="5" rx="2.5" fill="#93C5FD" opacity="0.3" />
 
-  <!-- Beak -->
-  <path d="M 300 215 L 291 230 L 309 230 Z" fill="#F59E0B" opacity="0.9" />
-
-  <!-- Wings -->
-  <ellipse cx="225" cy="280" rx="28" ry="58" fill="#60A5FA" opacity="0.6" transform="rotate(-5 225 280)" />
-  <ellipse cx="375" cy="280" rx="28" ry="58" fill="#60A5FA" opacity="0.6" transform="rotate(5 375 280)" />
-
-  <!-- Document -->
-  <g transform="translate(270, 370)" opacity="0.8">
-    <rect width="60" height="70" rx="6" fill="white" stroke="#2563EB" stroke-width="2" />
-    <line x1="10" y1="16" x2="50" y2="16" stroke="#93C5FD" stroke-width="2" />
-    <line x1="10" y1="26" x2="45" y2="26" stroke="#93C5FD" stroke-width="2" />
-    <line x1="10" y1="36" x2="50" y2="36" stroke="#93C5FD" stroke-width="2" />
-    <line x1="10" y1="46" x2="40" y2="46" stroke="#93C5FD" stroke-width="2" />
+    <!-- Bottom bar -->
+    <rect x="16" y="252" width="128" height="24" rx="12" fill="url(#wGrad)" />
+    <text x="44" y="269" font-size="11" fill="white" font-family="sans-serif" font-weight="700">Scanner</text>
   </g>
 
-  <!-- App store badges -->
-  <g transform="translate(430, 340)">
-    <rect width="120" height="40" rx="8" fill="#1F2937" />
-    <text x="16" y="18" font-size="7" fill="white" font-family="sans-serif" opacity="0.8">Telecharger sur</text>
-    <text x="16" y="30" font-size="11" fill="white" font-family="sans-serif" font-weight="700">App Store</text>
-  </g>
-  <g transform="translate(430, 390)">
-    <rect width="120" height="40" rx="8" fill="#1F2937" />
-    <text x="16" y="18" font-size="7" fill="white" font-family="sans-serif" opacity="0.8">Disponible sur</text>
-    <text x="16" y="30" font-size="11" fill="white" font-family="sans-serif" font-weight="700">Google Play</text>
+  <!-- Phone right -->
+  <g transform="translate(380, 100)">
+    <rect x="6" y="6" width="160" height="290" rx="26" fill="#000" opacity="0.06" />
+    <rect width="160" height="290" rx="26" fill="white" stroke="#E5E7EB" stroke-width="2.5" />
+    <rect x="45" y="10" width="70" height="7" rx="3.5" fill="#DBEAFE" />
+    <!-- Detail screen -->
+    <rect x="16" y="32" width="128" height="24" rx="8" fill="url(#wGrad)" />
+    <text x="34" y="49" font-size="11" fill="white" font-family="sans-serif" font-weight="700">Facture EDF</text>
+
+    <text x="24" y="78" font-size="9" fill="#6B7280" font-family="sans-serif">Montant</text>
+    <text x="24" y="94" font-size="16" fill="#1F2937" font-family="sans-serif" font-weight="800">1 250,00 €</text>
+
+    <text x="24" y="120" font-size="9" fill="#6B7280" font-family="sans-serif">Échéance</text>
+    <text x="24" y="136" font-size="14" fill="#EF4444" font-family="sans-serif" font-weight="700">15 mars 2026</text>
+
+    <text x="24" y="162" font-size="9" fill="#6B7280" font-family="sans-serif">Statut</text>
+    <rect x="24" y="168" width="60" height="20" rx="10" fill="#FEE2E2" />
+    <text x="35" y="182" font-size="9" fill="#EF4444" font-family="sans-serif" font-weight="700">Urgent</text>
+
+    <!-- Play audio button -->
+    <rect x="16" y="206" width="128" height="40" rx="14" fill="#F0FDF4" stroke="#10B981" stroke-width="2" />
+    <circle cx="42" cy="226" r="12" fill="#10B981" />
+    <polygon points="39,220 39,232 48,226" fill="white" />
+    <text x="60" y="230" font-size="10" fill="#10B981" font-family="sans-serif" font-weight="700">Écouter Nova</text>
+
+    <!-- Bottom bar -->
+    <rect x="16" y="258" width="128" height="24" rx="12" fill="#F1F5F9" />
+    <text x="36" y="275" font-size="10" fill="#6B7280" font-family="sans-serif" font-weight="600">Voir le scan</text>
   </g>
 
-  <!-- Particles -->
-  <circle cx="120" cy="200" r="8" fill="#2563EB" opacity="0.5" />
-  <circle cx="480" cy="180" r="8" fill="#10B981" opacity="0.4" />
-  <circle cx="160" cy="400" r="6" fill="#F59E0B" opacity="0.5" />
-  <circle cx="130" cy="130" r="4" fill="#FBBF24" opacity="0.6" />
-  <circle cx="470" cy="110" r="4" fill="#FBBF24" opacity="0.5" />
+  <!-- Big Nova in center -->
+  <g transform="translate(230, 20)">
+    <!-- Body -->
+    <ellipse cx="70" cy="130" rx="42" ry="48" fill="url(#wGrad)" />
+    <ellipse cx="70" cy="138" rx="28" ry="34" fill="#60A5FA" opacity="0.25" />
+    <!-- Head -->
+    <circle cx="70" cy="62" r="42" fill="url(#wGrad)" />
+    <!-- Ears -->
+    <path d="M 38 30 L 26 4 L 46 24 Z" fill="#3B82F6" />
+    <path d="M 102 30 L 114 4 L 94 24 Z" fill="#3B82F6" />
+    <!-- Eyes -->
+    <ellipse cx="54" cy="58" rx="14" ry="16" fill="white" />
+    <circle cx="57" cy="58" r="9" fill="#1F2937" />
+    <circle cx="60" cy="53" r="4.5" fill="white" />
+    <ellipse cx="86" cy="58" rx="14" ry="16" fill="white" />
+    <circle cx="89" cy="58" r="9" fill="#1F2937" />
+    <circle cx="92" cy="53" r="4.5" fill="white" />
+    <!-- Beak -->
+    <path d="M 70 74 L 62 86 L 78 86 Z" fill="#F59E0B" />
+    <!-- Wings pointing to phones -->
+    <ellipse cx="14" cy="120" rx="16" ry="30" fill="#1D4ED8" opacity="0.7" transform="rotate(-20 14 120)" />
+    <ellipse cx="126" cy="120" rx="16" ry="30" fill="#1D4ED8" opacity="0.7" transform="rotate(20 126 120)" />
+    <!-- Feet -->
+    <ellipse cx="52" cy="176" rx="13" ry="6" fill="#F59E0B" />
+    <ellipse cx="88" cy="176" rx="13" ry="6" fill="#F59E0B" />
+  </g>
+
+  <!-- Sparkles -->
+  <circle cx="40" cy="60" r="7" fill="#FBBF24" opacity="0.7" />
+  <circle cx="560" cy="50" r="6" fill="#10B981" opacity="0.6" />
+  <circle cx="30" cy="440" r="5" fill="#2563EB" opacity="0.4" />
+  <circle cx="570" cy="450" r="8" fill="#FBBF24" opacity="0.5" />
 </svg>

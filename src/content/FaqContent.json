@@ -1,0 +1,29 @@
+{
+  "title": "Questions fréquentes",
+  "items": [
+    {
+      "question": "Comment ça marche concrètement ?",
+      "answer": "Prenez en photo votre courrier ou importez un PDF. L'IA de Klariya analyse le document en quelques secondes : elle détecte le type (facture, impôts, contrat…), extrait le montant, la date limite et les infos clés. Vous pouvez ensuite écouter un résumé vocal avec Nova."
+    },
+    {
+      "question": "Mes documents sont-ils en sécurité ?",
+      "answer": "Oui. Vos documents sont chiffrés de bout en bout et stockés sur des serveurs sécurisés en Europe. Nous ne partageons jamais vos données avec des tiers. Vous pouvez supprimer vos documents à tout moment."
+    },
+    {
+      "question": "Quels types de documents sont pris en charge ?",
+      "answer": "Klariya reconnaît les factures, les avis d'imposition, les relevés bancaires, les courriers administratifs, les contrats, les attestations et bien plus. L'IA s'améliore en continu pour couvrir de nouveaux types de documents."
+    },
+    {
+      "question": "C'est quoi Nova ?",
+      "answer": "Nova est votre assistante vocale intégrée. Elle vous lit un résumé clair et naturel de chaque document scanné, comme si quelqu'un vous expliquait votre courrier. Pratique quand vous n'avez pas le temps de tout lire."
+    },
+    {
+      "question": "Est-ce que Klariya est gratuit ?",
+      "answer": "Klariya propose un essai gratuit de 7 jours avec toutes les fonctionnalités. Ensuite, vous pouvez choisir entre un forfait gratuit limité ou un abonnement premium pour un accès illimité aux scans, résumés vocaux et rappels."
+    },
+    {
+      "question": "Comment fonctionnent les rappels d'échéance ?",
+      "answer": "Quand Klariya détecte une date limite dans un document (facture, impôts, renouvellement…), elle crée automatiquement un rappel. Vous recevez une notification push et un email avant l'échéance pour ne rien oublier."
+    }
+  ]
+}

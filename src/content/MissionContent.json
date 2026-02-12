@@ -1,4 +1,9 @@
 {
   "title": "Ne ratez plus aucune échéance",
-  "text": "Klariya détecte automatiquement les dates limites dans vos documents et vous envoie des rappels par notification push et par email. Factures, impôts, courriers administratifs — tout est suivi pour vous."
+  "text": "Klariya détecte automatiquement les dates limites dans vos documents et vous envoie des rappels par notification push et par email. Factures, impôts, courriers administratifs — tout est suivi pour vous.",
+  "button": [
+    {
+      "title": "Commencer gratuitement"
+    }
+  ]
 }

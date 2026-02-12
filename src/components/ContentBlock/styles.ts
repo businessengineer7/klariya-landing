@@ -49,14 +49,48 @@ export const MinPara = styled("p")`
 
 export const ButtonWrapper = styled("div")`
   display: flex;
-  justify-content: space-between;
+  gap: 12px;
   max-width: 100%;
 
   @media screen and (min-width: 1024px) {
     max-width: 80%;
   }
 
-  button:last-child {
-    margin-left: 20px;
+  @media only screen and (max-width: 575px) {
+    flex-direction: column;
+    align-items: center;
+
+    button {
+      max-width: 100%;
+    }
+  }
+`;
+
+export const StoreBadgeWrapper = styled("div")`
+  display: flex;
+  gap: 16px;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+
+  @media only screen and (max-width: 575px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  a {
+    display: block;
+    transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    border-radius: 12px;
+    box-shadow: 0 4px 0 #111827;
+
+    &:hover {
+      transform: translateY(2px);
+      box-shadow: 0 2px 0 #111827;
+    }
+
+    &:active {
+      transform: translateY(4px);
+      box-shadow: 0 0px 0 #111827;
+    }
   }
 `;

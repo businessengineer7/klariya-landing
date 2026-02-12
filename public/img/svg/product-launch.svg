@@ -1,70 +1,89 @@
 <svg width="600" height="500" viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="blueGr" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="pGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#2563EB" />
       <stop offset="100%" stop-color="#3B82F6" />
     </linearGradient>
   </defs>
 
-  <!-- Background -->
-  <circle cx="300" cy="250" r="200" fill="#EFF6FF" opacity="0.4" />
-
-  <!-- Calendar card -->
-  <rect x="150" y="80" width="300" height="320" rx="20" fill="white" stroke="#E5E7EB" stroke-width="2" />
-  <rect x="150" y="80" width="300" height="60" rx="20" fill="url(#blueGr)" />
-  <rect x="150" y="120" width="300" height="20" fill="url(#blueGr)" />
-  <text x="220" y="118" font-size="18" fill="white" font-family="sans-serif" font-weight="700">Mars 2026</text>
-
-  <!-- Calendar grid headers -->
-  <text x="175" y="165" font-size="10" fill="#9CA3AF" font-family="sans-serif" font-weight="600">L</text>
-  <text x="215" y="165" font-size="10" fill="#9CA3AF" font-family="sans-serif" font-weight="600">M</text>
-  <text x="255" y="165" font-size="10" fill="#9CA3AF" font-family="sans-serif" font-weight="600">M</text>
-  <text x="295" y="165" font-size="10" fill="#9CA3AF" font-family="sans-serif" font-weight="600">J</text>
-  <text x="335" y="165" font-size="10" fill="#9CA3AF" font-family="sans-serif" font-weight="600">V</text>
-  <text x="375" y="165" font-size="10" fill="#9CA3AF" font-family="sans-serif" font-weight="600">S</text>
-  <text x="415" y="165" font-size="10" fill="#9CA3AF" font-family="sans-serif" font-weight="600">D</text>
-
-  <!-- Dates -->
-  <text x="175" y="195" font-size="12" fill="#6B7280" font-family="sans-serif">1</text>
-  <text x="215" y="195" font-size="12" fill="#6B7280" font-family="sans-serif">2</text>
-  <text x="255" y="195" font-size="12" fill="#6B7280" font-family="sans-serif">3</text>
-  <text x="295" y="195" font-size="12" fill="#6B7280" font-family="sans-serif">4</text>
-  <text x="335" y="195" font-size="12" fill="#6B7280" font-family="sans-serif">5</text>
-  <text x="375" y="195" font-size="12" fill="#6B7280" font-family="sans-serif">6</text>
-  <text x="415" y="195" font-size="12" fill="#6B7280" font-family="sans-serif">7</text>
-
-  <!-- Deadline highlight -->
-  <circle cx="340" cy="250" r="16" fill="#FEF2F2" />
-  <text x="332" y="255" font-size="12" fill="#EF4444" font-family="sans-serif" font-weight="700">15</text>
-  <circle cx="340" cy="264" r="3" fill="#EF4444" />
-
-  <!-- Notification bell -->
-  <g transform="translate(470, 100)">
-    <circle cx="40" cy="40" r="36" fill="white" stroke="#E5E7EB" stroke-width="2" />
-    <path d="M 33 28 C 33 24 37 20 40 20 C 43 20 47 24 47 28 L 47 38 C 47 38 52 40 52 44 L 28 44 C 28 40 33 38 33 38 Z" fill="url(#blueGr)" />
-    <circle cx="40" cy="48" r="3" fill="url(#blueGr)" />
-    <circle cx="52" cy="24" r="8" fill="#EF4444" />
-    <text x="49" y="28" font-size="9" fill="white" font-family="sans-serif" font-weight="700">3</text>
+  <!-- Big bell -->
+  <g transform="translate(210, 30)">
+    <!-- Bell body -->
+    <path d="M 90 60 C 90 30 120 0 150 0 C 180 0 210 30 210 60 L 210 140 C 210 140 240 155 240 175 L 60 175 C 60 155 90 140 90 140 Z" fill="url(#pGrad)" />
+    <!-- Bell clapper -->
+    <circle cx="150" cy="190" r="14" fill="#1D4ED8" />
+    <!-- Shine -->
+    <path d="M 120 40 C 120 25 135 10 150 10" fill="none" stroke="white" stroke-width="4" stroke-linecap="round" opacity="0.5" />
+    <!-- Badge -->
+    <circle cx="210" cy="20" r="24" fill="#EF4444" />
+    <text x="202" y="28" font-size="20" fill="white" font-family="sans-serif" font-weight="800">3</text>
   </g>
 
-  <!-- Reminder cards -->
-  <g transform="translate(60, 300)">
-    <rect width="160" height="70" rx="12" fill="white" stroke="#EF4444" stroke-width="1.5" />
-    <text x="16" y="28" font-size="10" fill="#1F2937" font-family="sans-serif" font-weight="600">Facture EDF</text>
-    <text x="16" y="44" font-size="9" fill="#6B7280" font-family="sans-serif">Echeance dans 3 jours</text>
-    <rect x="16" y="50" width="50" height="14" rx="7" fill="#FEF2F2" />
-    <text x="26" y="61" font-size="8" fill="#EF4444" font-family="sans-serif" font-weight="600">Urgent</text>
+  <!-- Notification cards popping out -->
+  <g transform="translate(40, 240)">
+    <rect x="4" y="4" width="230" height="80" rx="20" fill="#000" opacity="0.04" />
+    <rect width="230" height="80" rx="20" fill="white" stroke="#EF4444" stroke-width="2.5" />
+    <circle cx="40" cy="40" r="18" fill="#FEE2E2" />
+    <text x="33" y="45" font-size="16" font-family="sans-serif">📄</text>
+    <text x="68" y="30" font-size="12" fill="#1F2937" font-family="sans-serif" font-weight="700">Facture EDF</text>
+    <text x="68" y="48" font-size="10" fill="#6B7280" font-family="sans-serif">Échéance dans 3 jours</text>
+    <rect x="68" y="56" width="55" height="16" rx="8" fill="#FEE2E2" />
+    <text x="80" y="68" font-size="8" fill="#EF4444" font-family="sans-serif" font-weight="700">Urgent</text>
   </g>
 
-  <g transform="translate(80, 380)">
-    <rect width="160" height="70" rx="12" fill="white" stroke="#F59E0B" stroke-width="1.5" />
-    <text x="16" y="28" font-size="10" fill="#1F2937" font-family="sans-serif" font-weight="600">Impots 2025</text>
-    <text x="16" y="44" font-size="9" fill="#6B7280" font-family="sans-serif">Echeance dans 12 jours</text>
-    <rect x="16" y="50" width="55" height="14" rx="7" fill="#FFFBEB" />
-    <text x="24" y="61" font-size="8" fill="#F59E0B" font-family="sans-serif" font-weight="600">Normal</text>
+  <g transform="translate(80, 340)">
+    <rect x="4" y="4" width="230" height="80" rx="20" fill="#000" opacity="0.04" />
+    <rect width="230" height="80" rx="20" fill="white" stroke="#F59E0B" stroke-width="2.5" />
+    <circle cx="40" cy="40" r="18" fill="#FEF3C7" />
+    <text x="33" y="45" font-size="16" font-family="sans-serif">🏛️</text>
+    <text x="68" y="30" font-size="12" fill="#1F2937" font-family="sans-serif" font-weight="700">Impôts 2025</text>
+    <text x="68" y="48" font-size="10" fill="#6B7280" font-family="sans-serif">Échéance dans 12 jours</text>
+    <rect x="68" y="56" width="55" height="16" rx="8" fill="#FEF3C7" />
+    <text x="79" y="68" font-size="8" fill="#F59E0B" font-family="sans-serif" font-weight="700">Normal</text>
+  </g>
+
+  <g transform="translate(50, 430)">
+    <rect x="4" y="4" width="230" height="56" rx="20" fill="#000" opacity="0.03" />
+    <rect width="230" height="56" rx="20" fill="white" stroke="#10B981" stroke-width="2" />
+    <circle cx="36" cy="28" r="14" fill="#D1FAE5" />
+    <text x="29" y="33" font-size="14" font-family="sans-serif">✅</text>
+    <text x="60" y="24" font-size="11" fill="#1F2937" font-family="sans-serif" font-weight="700">Assurance auto</text>
+    <text x="60" y="42" font-size="9" fill="#10B981" font-family="sans-serif" font-weight="600">Payée — Aucune action</text>
+  </g>
+
+  <!-- Nova waving on the right -->
+  <g transform="translate(420, 230)">
+    <!-- Shadow -->
+    <ellipse cx="70" cy="230" rx="55" ry="12" fill="#000" opacity="0.06" />
+    <!-- Body -->
+    <ellipse cx="70" cy="170" rx="55" ry="62" fill="url(#pGrad)" />
+    <!-- Belly -->
+    <ellipse cx="70" cy="180" rx="38" ry="44" fill="#60A5FA" opacity="0.25" />
+    <!-- Head -->
+    <circle cx="70" cy="85" r="52" fill="url(#pGrad)" />
+    <!-- Ears -->
+    <path d="M 32 48 L 18 14 L 42 38 Z" fill="#3B82F6" />
+    <path d="M 108 48 L 122 14 L 98 38 Z" fill="#3B82F6" />
+    <!-- Eyes -->
+    <ellipse cx="50" cy="82" rx="17" ry="20" fill="white" />
+    <circle cx="54" cy="82" r="11" fill="#1F2937" />
+    <circle cx="58" cy="76" r="5.5" fill="white" />
+    <ellipse cx="90" cy="82" rx="17" ry="20" fill="white" />
+    <circle cx="94" cy="82" r="11" fill="#1F2937" />
+    <circle cx="98" cy="76" r="5.5" fill="white" />
+    <!-- Happy beak / smile -->
+    <path d="M 70 100 L 60 114 L 80 114 Z" fill="#F59E0B" />
+    <!-- Waving wing -->
+    <ellipse cx="135" cy="130" rx="20" ry="36" fill="#1D4ED8" opacity="0.7" transform="rotate(30 135 130)" />
+    <!-- Other wing -->
+    <ellipse cx="10" cy="165" rx="18" ry="32" fill="#1D4ED8" opacity="0.7" transform="rotate(-10 10 165)" />
+    <!-- Feet -->
+    <ellipse cx="48" cy="228" rx="16" ry="7" fill="#F59E0B" />
+    <ellipse cx="92" cy="228" r="16" ry="7" fill="#F59E0B" />
   </g>
 
   <!-- Sparkles -->
-  <circle cx="520" cy="350" r="4" fill="#F59E0B" opacity="0.6" />
-  <circle cx="100" cy="130" r="5" fill="#10B981" opacity="0.5" />
+  <circle cx="520" cy="60" r="8" fill="#FBBF24" opacity="0.7" />
+  <circle cx="160" cy="60" r="6" fill="#10B981" opacity="0.6" />
+  <circle cx="560" cy="480" r="7" fill="#2563EB" opacity="0.4" />
 </svg>

@@ -18,6 +18,7 @@ export interface ContentBlockProps {
         color: string;
       }
   )[];
+  storeBadges?: boolean;
   t: TFunction;
   id: string;
   direction: "left" | "right";

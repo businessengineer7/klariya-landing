@@ -1,0 +1,20 @@
+<svg width="200" height="60" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="60" rx="12" fill="#1F2937" />
+  <!-- Play triangle icon -->
+  <g transform="translate(16, 12)">
+    <defs>
+      <linearGradient id="gpGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#4285F4" />
+        <stop offset="33%" stop-color="#34A853" />
+        <stop offset="66%" stop-color="#FBBC04" />
+        <stop offset="100%" stop-color="#EA4335" />
+      </linearGradient>
+    </defs>
+    <polygon points="0,0 28,18 0,36" fill="url(#gpGrad)" />
+    <polygon points="0,0 20,12 0,12" fill="#4285F4" opacity="0.6" />
+    <polygon points="0,24 20,24 28,18 0,36" fill="#EA4335" opacity="0.6" />
+  </g>
+  <!-- Text -->
+  <text x="56" y="22" font-size="10" fill="white" font-family="sans-serif" opacity="0.9">Disponible sur</text>
+  <text x="56" y="44" font-size="20" fill="white" font-family="sans-serif" font-weight="800">Google Play</text>
+</svg>

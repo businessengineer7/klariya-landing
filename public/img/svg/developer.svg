@@ -1,79 +1,94 @@
 <svg width="600" height="500" viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="docGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="hGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#2563EB" />
       <stop offset="100%" stop-color="#3B82F6" />
     </linearGradient>
-    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="hGreen" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#10B981" />
       <stop offset="100%" stop-color="#34D399" />
     </linearGradient>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#EFF6FF" />
-      <stop offset="100%" stop-color="#DBEAFE" />
-    </linearGradient>
   </defs>
 
-  <!-- Background circle -->
-  <circle cx="300" cy="250" r="200" fill="url(#bgGrad)" opacity="0.5" />
+  <!-- Phone -->
+  <rect x="190" y="60" width="220" height="390" rx="32" fill="white" stroke="#E5E7EB" stroke-width="3" />
+  <rect x="190" y="60" width="220" height="390" rx="32" fill="white" />
+  <rect x="190" y="60" width="220" height="390" rx="32" fill="none" stroke="#2563EB" stroke-width="3" />
+  <rect x="265" y="72" width="70" height="8" rx="4" fill="#DBEAFE" />
 
-  <!-- Phone frame -->
-  <rect x="200" y="80" width="200" height="340" rx="24" fill="white" stroke="#2563EB" stroke-width="3" />
-  <rect x="260" y="92" width="80" height="8" rx="4" fill="#DBEAFE" />
-
-  <!-- Document card on phone -->
-  <rect x="220" y="130" width="160" height="100" rx="12" fill="white" stroke="#E5E7EB" stroke-width="2" />
-  <rect x="236" y="146" width="80" height="6" rx="3" fill="#2563EB" opacity="0.7" />
-  <rect x="236" y="160" width="128" height="4" rx="2" fill="#93C5FD" opacity="0.5" />
-  <rect x="236" y="172" width="110" height="4" rx="2" fill="#93C5FD" opacity="0.4" />
-  <rect x="236" y="184" width="120" height="4" rx="2" fill="#93C5FD" opacity="0.3" />
-  <!-- Urgency badge -->
-  <rect x="236" y="200" width="50" height="18" rx="9" fill="#FEF2F2" stroke="#EF4444" stroke-width="1" />
-  <text x="248" y="213" font-size="9" fill="#EF4444" font-family="sans-serif" font-weight="600">Urgent</text>
-
-  <!-- Second card -->
-  <rect x="220" y="248" width="160" height="80" rx="12" fill="white" stroke="#E5E7EB" stroke-width="2" />
-  <rect x="236" y="264" width="70" height="6" rx="3" fill="#10B981" opacity="0.7" />
-  <rect x="236" y="278" width="128" height="4" rx="2" fill="#93C5FD" opacity="0.4" />
-  <rect x="236" y="290" width="100" height="4" rx="2" fill="#93C5FD" opacity="0.3" />
-  <!-- Low badge -->
-  <rect x="236" y="304" width="40" height="18" rx="9" fill="#F0FDF4" stroke="#10B981" stroke-width="1" />
-  <text x="245" y="317" font-size="9" fill="#10B981" font-family="sans-serif" font-weight="600">Low</text>
-
-  <!-- Play button (audio) -->
-  <circle cx="360" y="268" r="16" fill="url(#docGrad)" />
-  <polygon points="355,260 355,276 367,268" fill="white" />
-
-  <!-- Floating scan icon -->
-  <g transform="translate(420, 120)">
-    <rect width="80" height="80" rx="16" fill="white" stroke="#E5E7EB" stroke-width="2" />
-    <rect x="16" y="16" width="48" height="48" rx="4" fill="none" stroke="#2563EB" stroke-width="2.5" stroke-dasharray="8 4" />
-    <path d="M 28 40 L 52 40" stroke="#2563EB" stroke-width="2" />
-    <circle cx="40" cy="40" r="8" fill="none" stroke="#10B981" stroke-width="2" />
+  <!-- Document card 1 -->
+  <g transform="translate(210, 110)">
+    <rect width="180" height="90" rx="16" fill="#F0F9FF" />
+    <rect x="16" y="16" width="90" height="10" rx="5" fill="#2563EB" opacity="0.7" />
+    <rect x="16" y="34" width="148" height="7" rx="3.5" fill="#93C5FD" opacity="0.5" />
+    <rect x="16" y="48" width="120" height="7" rx="3.5" fill="#93C5FD" opacity="0.4" />
+    <rect x="16" y="66" width="60" height="16" rx="8" fill="#FEE2E2" />
+    <text x="30" y="78" font-size="9" fill="#EF4444" font-family="sans-serif" font-weight="700">Urgent</text>
   </g>
 
-  <!-- Floating Nova mini -->
-  <g transform="translate(90, 200)">
-    <circle cx="40" cy="40" r="36" fill="url(#bgGrad)" />
-    <circle cx="40" cy="44" r="16" fill="url(#docGrad)" opacity="0.9" />
-    <circle cx="40" cy="30" r="12" fill="url(#docGrad)" />
-    <path d="M 31 22 L 29 14 L 34 19 Z" fill="url(#docGrad)" opacity="0.85" />
-    <path d="M 49 22 L 51 14 L 46 19 Z" fill="url(#docGrad)" opacity="0.85" />
-    <circle cx="36" cy="30" r="4" fill="white" opacity="0.95" />
-    <circle cx="36" cy="30" r="2.5" fill="#60A5FA" />
-    <circle cx="44" cy="30" r="4" fill="white" opacity="0.95" />
-    <circle cx="44" cy="30" r="2.5" fill="#60A5FA" />
-    <path d="M 40 33 L 38 36 L 42 36 Z" fill="#F59E0B" opacity="0.9" />
+  <!-- Document card 2 -->
+  <g transform="translate(210, 216)">
+    <rect width="180" height="90" rx="16" fill="#F0FDF4" />
+    <rect x="16" y="16" width="80" height="10" rx="5" fill="#10B981" opacity="0.7" />
+    <rect x="16" y="34" width="148" height="7" rx="3.5" fill="#93C5FD" opacity="0.4" />
+    <rect x="16" y="48" width="130" height="7" rx="3.5" fill="#93C5FD" opacity="0.3" />
+    <rect x="16" y="66" width="50" height="16" rx="8" fill="#D1FAE5" />
+    <text x="28" y="78" font-size="9" fill="#10B981" font-family="sans-serif" font-weight="700">OK</text>
   </g>
 
-  <!-- Sound waves -->
-  <path d="M 430 270 Q 445 270 445 290 Q 445 310 430 310" fill="none" stroke="url(#greenGrad)" stroke-width="3" opacity="0.7" />
-  <path d="M 440 260 Q 460 260 460 290 Q 460 320 440 320" fill="none" stroke="url(#greenGrad)" stroke-width="3" opacity="0.5" />
-  <path d="M 450 250 Q 475 250 475 290 Q 475 330 450 330" fill="none" stroke="url(#greenGrad)" stroke-width="3" opacity="0.3" />
+  <!-- Bottom nav bar -->
+  <rect x="210" y="390" width="180" height="40" rx="0" fill="#F8FAFC" />
+  <circle cx="250" cy="410" r="8" fill="#2563EB" opacity="0.3" />
+  <circle cx="300" cy="410" r="8" fill="#2563EB" />
+  <circle cx="350" cy="410" r="8" fill="#2563EB" opacity="0.3" />
 
-  <!-- Sparkles -->
-  <circle cx="150" cy="120" r="4" fill="#F59E0B" opacity="0.6" />
-  <circle cx="480" cy="380" r="5" fill="#2563EB" opacity="0.4" />
-  <circle cx="130" cy="370" r="3" fill="#10B981" opacity="0.5" />
-  <circle cx="470" cy="100" r="3" fill="#F59E0B" opacity="0.5" />
+  <!-- Nova mascot — bouncy Duolingo style -->
+  <g transform="translate(440, 140)">
+    <!-- Shadow -->
+    <ellipse cx="60" cy="175" rx="45" ry="10" fill="#000" opacity="0.06" />
+    <!-- Body -->
+    <ellipse cx="60" cy="120" rx="50" ry="55" fill="url(#hGrad)" />
+    <!-- Belly -->
+    <ellipse cx="60" cy="130" rx="34" ry="38" fill="#60A5FA" opacity="0.3" />
+    <!-- Head -->
+    <circle cx="60" cy="60" r="44" fill="url(#hGrad)" />
+    <!-- Ears -->
+    <path d="M 28 28 L 18 2 L 38 20 Z" fill="#3B82F6" />
+    <path d="M 92 28 L 102 2 L 82 20 Z" fill="#3B82F6" />
+    <!-- Left eye white -->
+    <ellipse cx="42" cy="58" rx="16" ry="18" fill="white" />
+    <!-- Left pupil -->
+    <circle cx="45" cy="58" r="10" fill="#1F2937" />
+    <!-- Left eye shine -->
+    <circle cx="49" cy="53" r="5" fill="white" />
+    <!-- Right eye white -->
+    <ellipse cx="78" cy="58" rx="16" ry="18" fill="white" />
+    <!-- Right pupil -->
+    <circle cx="81" cy="58" r="10" fill="#1F2937" />
+    <!-- Right eye shine -->
+    <circle cx="85" cy="53" r="5" fill="white" />
+    <!-- Beak -->
+    <path d="M 60 72 L 51 86 L 69 86 Z" fill="#F59E0B" />
+    <!-- Wings -->
+    <ellipse cx="8" cy="115" rx="18" ry="32" fill="#1D4ED8" opacity="0.7" transform="rotate(-15 8 115)" />
+    <ellipse cx="112" cy="115" rx="18" ry="32" fill="#1D4ED8" opacity="0.7" transform="rotate(15 112 115)" />
+    <!-- Feet -->
+    <ellipse cx="42" cy="172" rx="14" ry="6" fill="#F59E0B" />
+    <ellipse cx="78" cy="172" rx="14" ry="6" fill="#F59E0B" />
+  </g>
+
+  <!-- Speech bubble -->
+  <g transform="translate(60, 80)">
+    <rect width="110" height="50" rx="20" fill="white" stroke="#E5E7EB" stroke-width="2" />
+    <polygon points="90,50 100,68 75,50" fill="white" stroke="#E5E7EB" stroke-width="2" />
+    <polygon points="90,48 100,64 77,48" fill="white" />
+    <text x="16" y="25" font-size="11" fill="#1F2937" font-family="sans-serif" font-weight="700">Bonjour !</text>
+    <text x="16" y="40" font-size="9" fill="#6B7280" font-family="sans-serif">1 nouveau doc</text>
+  </g>
+
+  <!-- Floating sparkles -->
+  <circle cx="120" cy="400" r="8" fill="#FBBF24" opacity="0.7" />
+  <circle cx="540" cy="380" r="6" fill="#10B981" opacity="0.6" />
+  <circle cx="100" cy="200" r="5" fill="#2563EB" opacity="0.4" />
+  <circle cx="560" cy="100" r="7" fill="#FBBF24" opacity="0.5" />
 </svg>
