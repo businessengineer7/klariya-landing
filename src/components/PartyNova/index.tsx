@@ -6,7 +6,7 @@ import {
   MascotSide,
   WhiteBlob,
   NovaSvgWrapper,
-  MusicNote,
+  FloatingIcon,
   TextSide,
   SmallText,
   GradientTitle,
@@ -20,9 +20,33 @@ const PartyNova = ({ t }: { t: TFunction }) => {
         <BannerRow>
           <MascotSide>
             <WhiteBlob />
-            <MusicNote className="note1">♪</MusicNote>
-            <MusicNote className="note2">♫</MusicNote>
-            <MusicNote className="note3">♩</MusicNote>
+            <FloatingIcon className="note1">
+              <svg width="28" height="32" viewBox="0 0 28 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 0C0.9 0 0 0.9 0 2V30C0 31.1 0.9 32 2 32H26C27.1 32 28 31.1 28 30V8L20 0H2Z" fill="#60A5FA"/>
+                <path d="M20 0V8H28L20 0Z" fill="#93C5FD"/>
+                <rect x="5" y="14" width="18" height="2" rx="1" fill="white" opacity="0.7"/>
+                <rect x="5" y="19" width="14" height="2" rx="1" fill="white" opacity="0.7"/>
+                <rect x="5" y="24" width="10" height="2" rx="1" fill="white" opacity="0.7"/>
+              </svg>
+            </FloatingIcon>
+            <FloatingIcon className="note2">
+              <svg width="28" height="32" viewBox="0 0 28 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 0C0.9 0 0 0.9 0 2V30C0 31.1 0.9 32 2 32H26C27.1 32 28 31.1 28 30V8L20 0H2Z" fill="#10B981"/>
+                <path d="M20 0V8H28L20 0Z" fill="#6EE7B7"/>
+                <rect x="5" y="14" width="18" height="2" rx="1" fill="white" opacity="0.7"/>
+                <rect x="5" y="19" width="14" height="2" rx="1" fill="white" opacity="0.7"/>
+                <rect x="5" y="24" width="10" height="2" rx="1" fill="white" opacity="0.7"/>
+              </svg>
+            </FloatingIcon>
+            <FloatingIcon className="note3">
+              <svg width="32" height="36" viewBox="0 0 28 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 0C0.9 0 0 0.9 0 2V30C0 31.1 0.9 32 2 32H26C27.1 32 28 31.1 28 30V8L20 0H2Z" fill="#3B82F6"/>
+                <path d="M20 0V8H28L20 0Z" fill="#93C5FD"/>
+                <rect x="5" y="14" width="18" height="2" rx="1" fill="white" opacity="0.7"/>
+                <rect x="5" y="19" width="14" height="2" rx="1" fill="white" opacity="0.7"/>
+                <rect x="5" y="24" width="10" height="2" rx="1" fill="white" opacity="0.7"/>
+              </svg>
+            </FloatingIcon>
             <NovaSvgWrapper>
               <svg width="280" height="280" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                 <defs>

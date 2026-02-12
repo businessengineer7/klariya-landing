@@ -113,28 +113,23 @@ export const NovaSvgWrapper = styled("div")`
   }
 `;
 
-export const MusicNote = styled("div")`
+export const FloatingIcon = styled("div")`
   position: absolute;
-  font-size: 24px;
   opacity: 0;
   z-index: 3;
 
   &.note1 {
     left: 10%;
-    color: #60A5FA;
     animation: ${floatUp} 2s infinite linear;
   }
 
   &.note2 {
     right: 10%;
-    color: #10B981;
     animation: ${floatUp} 2.5s infinite linear 0.5s;
   }
 
   &.note3 {
     left: 25%;
-    color: #3B82F6;
-    font-size: 30px;
     animation: ${floatUp} 3s infinite linear 1s;
   }
 `;
