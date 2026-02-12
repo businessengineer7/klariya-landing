@@ -121,9 +121,9 @@ const PartyNova = ({ t }: { t: TFunction }) => {
           </MascotSide>
 
           <TextSide>
-            <SmallText>{t("Boostez votre courrier avec")}</SmallText>
-            <GradientTitle>Super Klariya</GradientTitle>
-            <CTAButton>{t("Essayer 1 semaine gratuite")}</CTAButton>
+            <SmallText>{t("Nova analyse, résume et vous explique")}</SmallText>
+            <GradientTitle>{t("Vos documents décryptés en un instant")}</GradientTitle>
+            <CTAButton>{t("Essayer gratuitement")}</CTAButton>
           </TextSide>
         </BannerRow>
       </Fade>

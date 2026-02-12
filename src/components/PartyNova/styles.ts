@@ -8,7 +8,7 @@ const floatUp = keyframes`
 `;
 
 export const BannerSection = styled("section")`
-  background: #0B1120;
+  background: #EFF6FF;
   padding: 4rem 0;
   position: relative;
   overflow: hidden;
@@ -119,13 +119,12 @@ export const TextSide = styled("div")`
 `;
 
 export const SmallText = styled("p")`
-  color: white;
+  color: #6B7280;
   font-size: 1.1rem;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 3px;
   margin-bottom: 0.5rem;
-  opacity: 0.9;
 `;
 
 export const GradientTitle = styled("h2")`
@@ -146,8 +145,8 @@ export const GradientTitle = styled("h2")`
 `;
 
 export const CTAButton = styled("button")`
-  background: white;
-  color: #0B1120;
+  background: #2563EB;
+  color: white;
   font-size: 0.9rem;
   font-weight: 800;
   text-transform: uppercase;
@@ -156,16 +155,16 @@ export const CTAButton = styled("button")`
   border: none;
   border-radius: 16px;
   cursor: pointer;
-  box-shadow: 0 4px 0 #374151;
+  box-shadow: 0 4px 0 #1D4ED8;
   transition: all 0.15s ease;
 
   &:hover {
     transform: translateY(2px);
-    box-shadow: 0 2px 0 #374151;
+    box-shadow: 0 2px 0 #1D4ED8;
   }
 
   &:active {
     transform: translateY(4px);
-    box-shadow: 0 0px 0 #374151;
+    box-shadow: 0 0px 0 #1D4ED8;
   }
 `;
