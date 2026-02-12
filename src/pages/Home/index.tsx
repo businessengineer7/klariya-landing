@@ -7,6 +7,7 @@ import ProductContent from "../../content/ProductContent.json";
 import FaqContent from "../../content/FaqContent.json";
 
 const Faq = lazy(() => import("../../components/Faq"));
+const PartyNova = lazy(() => import("../../components/PartyNova"));
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
 const Container = lazy(() => import("../../common/Container"));
 const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
@@ -53,6 +54,7 @@ const Home = () => {
         icon="waving.svg"
         id="product"
       />
+      <PartyNova />
       <Faq
         title={FaqContent.title}
         items={FaqContent.items}
