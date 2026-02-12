@@ -104,10 +104,10 @@ const ContentBlock = ({
               )}
               {storeBadges && (
                 <StoreBadgeWrapper>
-                  <a href="#" aria-label="App Store">
+                  <a href="https://apps.apple.com" target="_blank" rel="noopener noreferrer" aria-label="App Store">
                     <SvgIcon src="app-store-badge.svg" width="180px" height="54px" />
                   </a>
-                  <a href="#" aria-label="Google Play">
+                  <a href="https://play.google.com" target="_blank" rel="noopener noreferrer" aria-label="Google Play">
                     <SvgIcon src="google-play-badge.svg" width="180px" height="54px" />
                   </a>
                 </StoreBadgeWrapper>
