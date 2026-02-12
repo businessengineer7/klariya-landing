@@ -20,6 +20,11 @@ export const BannerSection = styled("section")`
     margin: 2rem -1rem;
     padding: 3rem 1rem;
   }
+
+  @media only screen and (max-width: 414px) {
+    padding: 2rem 0.5rem;
+    margin: 1rem -1rem;
+  }
 `;
 
 export const BannerRow = styled("div")`
@@ -34,6 +39,12 @@ export const BannerRow = styled("div")`
     flex-direction: column;
     text-align: center;
     gap: 2rem;
+    padding: 0 1rem;
+  }
+
+  @media only screen and (max-width: 414px) {
+    gap: 1rem;
+    padding: 0 0.5rem;
   }
 `;
 
@@ -46,6 +57,11 @@ export const MascotSide = styled("div")`
   @media only screen and (max-width: 768px) {
     width: 300px;
     height: 280px;
+  }
+
+  @media only screen and (max-width: 414px) {
+    width: 240px;
+    height: 230px;
   }
 `;
 
@@ -64,6 +80,11 @@ export const WhiteBlob = styled("div")`
     width: 240px;
     height: 150px;
   }
+
+  @media only screen and (max-width: 414px) {
+    width: 200px;
+    height: 120px;
+  }
 `;
 
 export const NovaSvgWrapper = styled("div")`
@@ -79,6 +100,15 @@ export const NovaSvgWrapper = styled("div")`
     svg {
       width: 220px;
       height: 220px;
+    }
+  }
+
+  @media only screen and (max-width: 414px) {
+    bottom: 20px;
+
+    svg {
+      width: 180px;
+      height: 180px;
     }
   }
 `;
@@ -125,6 +155,11 @@ export const SmallText = styled("p")`
   text-transform: uppercase;
   letter-spacing: 3px;
   margin-bottom: 0.5rem;
+
+  @media only screen and (max-width: 414px) {
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+  }
 `;
 
 export const GradientTitle = styled("h2")`
@@ -142,6 +177,11 @@ export const GradientTitle = styled("h2")`
   @media only screen and (max-width: 768px) {
     font-size: 2.2rem;
   }
+
+  @media only screen and (max-width: 414px) {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
 `;
 
 export const CTAButton = styled("button")`
@@ -157,6 +197,11 @@ export const CTAButton = styled("button")`
   cursor: pointer;
   box-shadow: 0 4px 0 #1D4ED8;
   transition: all 0.15s ease;
+
+  @media only screen and (max-width: 414px) {
+    padding: 14px 28px;
+    font-size: 0.8rem;
+  }
 
   &:hover {
     transform: translateY(2px);

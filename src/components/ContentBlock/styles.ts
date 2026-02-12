@@ -8,6 +8,10 @@ export const ContentSection = styled("section")`
   @media only screen and (max-width: 1024px) {
     padding: 4rem 0 4rem;
   }
+
+  @media only screen and (max-width: 414px) {
+    padding: 3rem 0;
+  }
 `;
 
 export const Content = styled("p")`
@@ -24,7 +28,8 @@ export const ContentWrapper = styled("div")`
   max-width: 540px;
 
   @media only screen and (max-width: 575px) {
-    padding-top: 4rem;
+    padding-top: 2rem;
+    max-width: 100%;
   }
 `;
 

@@ -5,6 +5,10 @@ export const FooterSection = styled("footer")`
   background: #F8FAFC;
   padding: 2rem 0 1.5rem;
   border-top: 1px solid #E5E7EB;
+
+  @media only screen and (max-width: 414px) {
+    padding: 1.5rem 0 1rem;
+  }
 `;
 
 export const NavLink = styled(Link)`
@@ -32,6 +36,7 @@ export const Para = styled("div")`
   @media only screen and (max-width: 575px) {
     text-align: center;
     margin-bottom: 1rem;
+    font-size: 0.8rem;
   }
 `;
 

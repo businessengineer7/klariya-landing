@@ -13,6 +13,13 @@ export const HeaderSection = styled("header")`
 
 export const LogoContainer = styled(Link)`
   display: flex;
+
+  @media only screen and (max-width: 414px) {
+    img {
+      width: 160px;
+      height: auto;
+    }
+  }
 `;
 
 export const NavLink = styled("div")`

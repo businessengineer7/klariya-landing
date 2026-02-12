@@ -11,6 +11,10 @@ export const FaqSection = styled("section")`
 export const FaqTitle = styled("h6")`
   text-align: center;
   margin-bottom: 3rem;
+
+  @media only screen and (max-width: 414px) {
+    margin-bottom: 2rem;
+  }
 `;
 
 export const FaqList = styled("div")`
@@ -50,6 +54,14 @@ export const FaqQuestion = styled("div")`
     font-weight: 700;
     color: #1F2937;
   }
+
+  @media only screen and (max-width: 414px) {
+    padding: 16px 16px;
+
+    span {
+      font-size: 0.9rem;
+    }
+  }
 `;
 
 export const FaqIcon = styled("span")<{ isOpen: boolean }>`
@@ -67,7 +79,7 @@ export const FaqIcon = styled("span")<{ isOpen: boolean }>`
 `;
 
 export const FaqAnswer = styled("div")<{ isOpen: boolean }>`
-  max-height: ${({ isOpen }) => (isOpen ? "300px" : "0")};
+  max-height: ${({ isOpen }) => (isOpen ? "500px" : "0")};
   opacity: ${({ isOpen }) => (isOpen ? 1 : 0)};
   overflow: hidden;
   transition: max-height 0.3s ease, opacity 0.2s ease, padding 0.3s ease;
@@ -75,4 +87,9 @@ export const FaqAnswer = styled("div")<{ isOpen: boolean }>`
   font-size: 0.95rem;
   line-height: 1.6;
   color: #6B7280;
+
+  @media only screen and (max-width: 414px) {
+    padding: ${({ isOpen }) => (isOpen ? "0 16px 16px" : "0 16px")};
+    font-size: 0.875rem;
+  }
 `;

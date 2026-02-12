@@ -73,8 +73,16 @@ export const Styles = createGlobalStyle`
 
     p {
         color: #6B7280;
-        font-size: 21px;        
+        font-size: 21px;
         line-height: 1.41;
+
+        @media only screen and (max-width: 768px) {
+            font-size: 17px;
+        }
+
+        @media only screen and (max-width: 414px) {
+            font-size: 16px;
+        }
     }
 
     h1 {
